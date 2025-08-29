@@ -6,6 +6,7 @@ public class Single_Level {
 		
 		Vehicle v = new Vehicle();
 		v.display();
+		v.ambition();
 		
 		
 		Bike b = new Bike();
@@ -13,6 +14,7 @@ public class Single_Level {
 		b.model = "Duke";
 		b.show();
 		b.display();
+		b.ambition();
 		
 	}
 
@@ -23,14 +25,30 @@ class Vehicle{
 	String model;
 	
 	public void display() {
-		System.out.println("The model of the vehicle from parent class is " + model + " " + tyres);
+		System.out.println("I am display from Parent class , The model of the vehicle from parent class is " + model + " " + tyres);
+	}
+	
+	public void ambition() {
+		System.out.println("doctor");
 	}
 }
 
 class Bike extends Vehicle{
 	int year = 2015;
 	
+	@Override
+	public void ambition() {
+		System.out.println("developer");
+	}
+	
+	
+	
 	public void show() {
 		System.out.println("The child class value " + year + " " + tyres + " " + model);
-		System.out.println();	}
+			
+	}
+	
+	public void display() {
+		System.out.println("I am display from child class");
+	}
 }

@@ -12,8 +12,6 @@ public class Private_Access {
 		p.setAge(26);
 		System.out.println(p.getAge());
 		
-	
-	
 
 	}
 
@@ -25,9 +23,6 @@ class Person{
 	public int getAge() {
 		return age;
 	}
-
-
-
 	public void setAge(int age) {
 		this.age = age;
 	}
